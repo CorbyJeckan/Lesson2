@@ -12,5 +12,7 @@ class Program
         Console.WriteLine(mybankaccount.Balance);
         Console.WriteLine("Тип счёта:");
         Console.WriteLine(mybankaccount.Savings);
+        Console.WriteLine("Завершение программы");
+        Console.ReadLine();
     }
 }

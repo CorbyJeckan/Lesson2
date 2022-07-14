@@ -1,22 +1,43 @@
 ﻿namespace OOP
 {
-    internal class BankAccount
+    public class BankAccount
     {
-        private int accountNumber = 15674894;
-        private int balance = 15200;
-        private string savings = "Сберегательный счёт";
+        private int _AccountNumber = 15674894;
+        private double _Balance = 15200;
+        private string _Savings = "Сберегательный счёт";
 
-        public string Savings { get { return savings; } set { savings = value; } }
-        public int Balance { get { return balance; } set { balance = value; } }
+        
         public int AccountNumber
         {
             get
             {
-                return accountNumber;
+                return Random.Shared.Next();
             }
             set
             {
-                AccountNumber = value;
+                _AccountNumber = value;
+            }
+        }
+        public double Balance
+        {
+            get
+            {
+                return _Balance;
+            }
+            set
+            {
+                _Balance = value;
+            }
+        }
+            public string Savings
+        {
+            get
+            {
+                return _Savings;
+            }
+            set
+            {
+                _Savings = value;
             }
         }
     }
