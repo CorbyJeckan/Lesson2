@@ -3,7 +3,7 @@ class Program
 {
     static void Main()
     {
-        BankAccount mybankaccount = new BankAccount();
+        BankAccount mybankaccount = new BankAccount("Сберегательный счёт", 15200, Random.Shared.Next());
 
         Console.WriteLine("Задание к уроку №2");
         Console.WriteLine("Номер счёта:");

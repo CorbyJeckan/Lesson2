@@ -40,6 +40,22 @@
                 _Savings = value;
             }
         }
+
+
+        //public BankAccount() //Конструктор по умолчанию
+        //{
+        //    _AccountNumber = Random.Shared.Next();
+        //    _Balance = 15200;
+        //    _Savings = "Сберегательный счёт";
+        //}
+
+    public BankAccount(string savings, double balance, int accountNumber)//Конструктор с параметрами
+        {
+            _Savings = savings;
+            _Balance = balance;
+            _AccountNumber = accountNumber;
+        }
     }
+
     
 }
