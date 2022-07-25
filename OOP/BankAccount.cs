@@ -2,20 +2,34 @@
 {
     public class BankAccount
     {
+        private int _AccountNumber2 = 15674895;
         private int _AccountNumber = 15674894;
         private double _Balance = 15200;
+        private double _Balance2 = 17950;
         private string _Savings = "Сберегательный счёт";
+        private string _Credit = "Кредитный счёт";
 
-        
+
         public int AccountNumber
         {
             get
             {
-                return Random.Shared.Next();
+                return 15674894;
             }
             set
             {
                 _AccountNumber = value;
+            }
+        }
+        public int AccountNumber2
+        {
+            get
+            {
+                return 15674895;
+            }
+            set
+            {
+                _AccountNumber2 = value;
             }
         }
         public double Balance
@@ -29,7 +43,18 @@
                 _Balance = value;
             }
         }
-            public string Savings
+        public double Balance2
+        {
+            get
+            {
+                return _Balance2;
+            }
+            set
+            {
+                _Balance2 = value;
+            }
+        }
+        public string Savings
         {
             get
             {
@@ -38,6 +63,17 @@
             set
             {
                 _Savings = value;
+            }
+        }
+        public string Credit
+        {
+            get
+            {
+                return _Credit;
+            }
+            set
+            {
+                _Credit = value;
             }
         }
 
@@ -49,11 +85,14 @@
         //    _Savings = "Сберегательный счёт";
         //}
 
-    public BankAccount(string savings, double balance, int accountNumber)//Конструктор с параметрами
+        public BankAccount(string savings, string credit, double balance, double balance2, int accountNumber ,int accountNumber2)//Конструктор с параметрами
         {
             _Savings = savings;
+            _Credit = credit;
             _Balance = balance;
+            _Balance2 = balance2;
             _AccountNumber = accountNumber;
+            _AccountNumber2 = accountNumber2;
         }
     }
 
